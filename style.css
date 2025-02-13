@@ -1,0 +1,53 @@
+input {
+    width: 250;
+height: 33;
+border-radius: 24px;
+gap: 227px;
+border-width: 1px;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 16px;
+background: #FFFFFF;
+border: 1px solid #EA6A12;
+}
+
+.filaone, .filatwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.asfilas {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 188;
+height: 44;
+border-radius: 44px;
+border-width: 1px;
+padding-top: 8px;
+padding-right: 24px;
+padding-bottom: 8px;
+padding-left: 24px;
+background: #EA6A12;
+border: none;
+color: white;
+}
+
+.ata {
+    max-width: 44px;
+    max-height: 44px;
+  }
+  
+  .at {
+    display: flex;
+    align-items: center;
+   
+  }
+
+  
+.click {
+    color: rgb(240, 142, 72);
+  }
