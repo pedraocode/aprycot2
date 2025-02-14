@@ -1,53 +1,133 @@
+/* Resets e fonte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Container principal */
+.tudo {
+  /* IMPORTANTE: para que .circula seja posicionado dentro deste container */
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Coluna da esquerda */
+.esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  width: 165px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
 input {
-    width: 250;
-height: 33;
-border-radius: 24px;
-gap: 227px;
-border-width: 1px;
-padding-top: 8px;
-padding-right: 16px;
-padding-bottom: 8px;
-padding-left: 16px;
-background: #FFFFFF;
-border: 1px solid #EA6A12;
+  width: 250px;
+  height: 33px;
+  border-radius: 24px;
+  border: 1px solid #EA6A12;
+  padding: 8px 16px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 .filaone, .filatwo {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .asfilas {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
+/* Botão */
 button {
-    width: 188;
-height: 44;
-border-radius: 44px;
-border-width: 1px;
-padding-top: 8px;
-padding-right: 24px;
-padding-bottom: 8px;
-padding-left: 24px;
-background: #EA6A12;
-border: none;
-color: white;
+  width: 148px;
+  height: 44px;
+  border-radius: 44px;
+  border: none;
+  padding: 8px 24px;
+  background: #EA6A12;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
 }
 
-.ata {
-    max-width: 44px;
-    max-height: 44px;
-  }
-  
-  .at {
-    display: flex;
-    align-items: center;
-   
-  }
+/* Check e textos */
+.k {
+  margin: 10px 0;
+}
 
-  
 .click {
-    color: rgb(240, 142, 72);
-  }
+  color: rgb(240, 142, 72);
+}
+
+/* Ícones */
+.ata {
+  max-width: 44px;
+  max-height: 44px;
+  margin-right: 10px;
+}
+
+.at {
+  display: flex;
+  align-items: center;
+}
+
+/* Div que contém o círculo, posicionado no canto superior direito */
+.circula {
+  position: absolute;
+  top: -200px;   /* Ajuste vertical */
+  right: -100px; /* Ajuste horizontal */
+  
+  width: 825px;   
+  height: 825px;  
+}
+
+/* Círculo em si */
+.circulo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FFF3EBA3;
+  overflow: hidden; /* Para cortar o que passar */
+}
+
+/* Primeira imagem existente dentro do círculo */
+.ka {
+  position: absolute;
+  bottom: -200px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;  
+  height: auto;
+}
+
+
+.kl {
+ 
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+width: 200px;
+height: 200px;
+
+  bottom: -50px; 
+}
+
