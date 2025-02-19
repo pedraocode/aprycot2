@@ -1,4 +1,3 @@
-/* Resets e fonte */
 * {
   margin: 0;
   padding: 0;
@@ -7,32 +6,28 @@
   overflow-x: hidden;
 }
 
-/* Container principal */
 .tudo {
-  /* IMPORTANTE: para que .circula seja posicionado dentro deste container */
   position: relative;
-  
   display: flex;
   align-items: center;
+  justify-content: center; 
   min-height: 100vh;
   padding: 20px;
+ padding-right: 600px;
 }
 
-/* Coluna da esquerda */
 .esquerda {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Logo */
 .logo {
   width: 165px;
   height: 48px;
   margin-bottom: 20px;
 }
 
-/* Inputs */
 input {
   width: 250px;
   height: 33px;
@@ -43,7 +38,8 @@ input {
   margin-bottom: 10px;
 }
 
-.filaone, .filatwo {
+.filaone,
+.filatwo {
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -54,7 +50,6 @@ input {
   align-items: center;
 }
 
-/* Botão */
 button {
   width: 148px;
   height: 44px;
@@ -67,7 +62,6 @@ button {
   margin: 10px 0;
 }
 
-/* Check e textos */
 .k {
   margin: 10px 0;
 }
@@ -76,7 +70,6 @@ button {
   color: rgb(240, 142, 72);
 }
 
-/* Ícones */
 .ata {
   max-width: 44px;
   max-height: 44px;
@@ -88,46 +81,116 @@ button {
   align-items: center;
 }
 
-/* Div que contém o círculo, posicionado no canto superior direito */
 .circula {
   position: absolute;
-  top: -200px;   /* Ajuste vertical */
-  right: -100px; /* Ajuste horizontal */
-  
-  width: 825px;   
-  height: 825px;  
+  top: -200px;
+  right: -100px;
+  width: 825px;
+  height: 825px;
 }
 
-/* Círculo em si */
 .circulo {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   background: #FFF3EBA3;
-  overflow: hidden; /* Para cortar o que passar */
+  overflow: hidden;
 }
 
-/* Primeira imagem existente dentro do círculo */
+/* Primeira imagem dentro do círculo */
 .ka {
   position: absolute;
-  bottom: -200px; 
+  bottom: -200px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;  
+  width: 70%;
   height: auto;
 }
 
-
 .kl {
- 
   position: absolute;
-
   left: 50%;
   transform: translateX(-50%);
-width: 200px;
-height: 200px;
-
-  bottom: -50px; 
+  max-width: 200px;
+  max-height: 200px;
+  bottom: -50px;
 }
 
+.i {
+  display: flex;
+  align-items: center;
+  color: #959895;
+  justify-content: center;
+}
+
+.dadfh {
+  margin: 10px;
+  width: 20px;
+}
+
+.taxar {
+  color: #959895;
+}
+
+h1 {
+  color: #07143B;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .tudo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 20px; 
+  }
+  .esquerda {
+    margin: 0;
+    margin-top: 240px; /* Garante que o conteúdo fique abaixo da área circular */
+    width: 90%;
+  }
+  .circula {
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+  }
+  .circula .circulo {
+    overflow: visible;
+  }
+  .ka {
+    bottom: 0;
+  }
+  input {
+    width: 90%;
+  }
+  button {
+    max-width: 188px;
+    
+    border-radius: 44px;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    
+  }
+
+  .kl {
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
+
+@media screen and (max-width: 1100px) { 
+  .kl {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .circula {
+ 
+    width: 200px;
+    height: 200px;
+  }
+}
